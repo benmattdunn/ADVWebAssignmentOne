@@ -3,15 +3,36 @@
 
 
 <div class="container">
+<!-- first div start -->
+    <%if(firstDiv == true) {
+        if (pictureLead == true)
+        {%>
+            <!-- picture lead div -->
+            <div class="col-md-4">
+                <!-- picture goes here -->
 
-    <div class="starter-template">
-        <h1>bleh</h1>
-        <p class="lead">bleh</p>
-    </div>
+            </div>
+            <div class="col-md-8">
+                <h1> <%=title%></h1>
+                <p><%=message%></p>
+        <%}
+        else {%>
+            <div class="col-md-12">
+        <%}%>
 
+
+
+            </div>
+    <%}%>
+
+
+
+    <%if(secondDiv==true){%>
     <div class="container">
-        <p>bleh</p>
+        <p>bleh</p> <!-- this is a test container that I have left in because it may have use later -->
     </div>
+    <%}%>
+
 
 </div><!-- /.container -->
 

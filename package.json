@@ -1,5 +1,5 @@
 {
-  "name": "assignmentone",
+  "name": "assone",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -23,5 +23,13 @@
   "main": "app.js",
   "author": "ben Dunn",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benmattdunn/ADVWebAssignmentOne.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benmattdunn/ADVWebAssignmentOne/issues"
+  },
+  "homepage": "https://github.com/benmattdunn/ADVWebAssignmentOne#readme"
 }
