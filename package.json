@@ -1,0 +1,27 @@
+{
+  "name": "assignmentone",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "bootstrap": "^3.3.7",
+    "connect": "^3.5.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "~2.4.1",
+    "express": "^4.13.4",
+    "morgan": "~1.7.0",
+    "node": "0.0.0",
+    "nodejs": "0.0.0",
+    "nodemon": "^1.10.2",
+    "serve-favicon": "~2.3.0"
+  },
+  "description": "Assignment for riches 2068 class",
+  "main": "app.js",
+  "author": "ben Dunn",
+  "license": "ISC",
+  "devDependencies": {}
+}
