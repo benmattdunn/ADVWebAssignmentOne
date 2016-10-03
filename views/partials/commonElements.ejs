@@ -1,0 +1,88 @@
+
+
+
+<!--
+Created by Ben M. Dunn
+oct3, 2016
+
+Creates common elements that will display first on the page, these common elements are simplistic things
+that are simple working elemenets. Included in this display are as follows (if it is added, the res' are
+
+title String        //string for the title of the page, global variable for all components
+firstDiv boolean    //does the first div exist?
+pictureLead boolean // does the first div have a picture lead?
+
+secondDiv  boolean  //a second div for code purposes, should be false.
+
+contact    boolean  //contact form, visable or invisable.
+
+
+
+-->
+<div class="container">
+    <!-- first div start -->
+    <%if(firstDiv == true) {
+    if (pictureLead == true)
+    {%>
+    <!-- picture lead div -->
+    <div class="col-md-4">
+        <!-- picture goes here -->
+        <img src="/images/muggshot.png" alt="image" style="width:200px;height:200px;">
+        <!-- inline as we will likely learn a better way later -->
+
+    </div>
+    <!-- if a picture is used, or not used, this code determines how much of the
+    display is fractioned, by default a picture is present for 8-->
+    <div class="col-md-8">
+        <h1> <%=title%></h1>
+        <p><%=message%></p>
+        <%}
+        else {%>
+        <div class="col-md-12">
+            <%}%>
+        </div>
+        <%}%>
+        <!-- first div end -->
+
+        <!-- test container for debug -->
+        <%if(secondDiv==true){%>
+        <div class="container">
+            <p>bleh</p> <!-- this is a test container that I have left in because it may have use later -->
+        </div>
+        <%}%><!-- test contatiner for debug -->
+
+    </div><!-- /.container end -->
+
+    <!-- contact form container -->
+    <% if (contact==true) {%>
+
+    <div class="container">
+        <form class="form-horizontal" role="form" method="post" action="submit.js">
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message" class="col-sm-2 control-label">Message</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" rows="4" name="message"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-10 col-sm-offset-2">
+                    <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    <%}%>
+<!-- contact form end -->
