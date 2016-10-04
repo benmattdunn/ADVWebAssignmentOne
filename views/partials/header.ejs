@@ -1,3 +1,22 @@
+<!--
+Created by Ben M. Dunn
+oct3, 2016
+
+Used and edited default bootstrap navbar inverse example avaliable at
+www.bootstrap.com
+
+Sets up the basic header information, including the basic bootstrap items and important
+reference files, will add functionality as it increases in scope.
+
+For now the titles of the pages and main links are not pulled from an array, I'd like to
+add that functionality for dynamic page navigation. 
+
+Values in:
+WStitle     String  //a string represting the title of the wesite name
+
+
+--->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,18 +42,21 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><%=title %></a>
+            <a class="navbar-brand" href="/"><%=WStitle %></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active">
-                    <a href="#/about">About Me</a>
-                </li>
 
+
+                <li class="active">
+                    <a href="/">About Me</a>
+                </li>
                 <li>
-                    <a href="#/projects">Projects</a></li>
+                    <a href="/projectsStart">Projects</a>
+                </li>
                 <li>
-                    <a href="/contact">Contact</a></li>
+                    <a href="/contact">Contact</a>
+                </li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

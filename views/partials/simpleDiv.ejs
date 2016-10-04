@@ -1,6 +1,4 @@
 
-
-
 <!--
 Created by Ben M. Dunn
 oct3, 2016
@@ -10,12 +8,11 @@ that are simple working elemenets. Included in this display are as follows (if i
 
 
 IN values:
-title String        //string for the title of the page, global variable for all components
+WStitle String        //string for the title of the page, global variable for all components
 firstDiv boolean    //does the first div exist?
 pictureLead boolean // does the first div have a picture lead?
 
-secondDiv  boolean  //a second div for code purposes, should be false.
-
+settings are by default a 4/8 bootstrap row configuration.
 -->
 <div class="container">
     <!-- first div start -->
@@ -32,23 +29,14 @@ secondDiv  boolean  //a second div for code purposes, should be false.
     <!-- if a picture is used, or not used, this code determines how much of the
     display is fractioned, by default a picture is present for 8-->
     <div class="col-md-8">
-        <h1> <%=title%></h1>
-        <p><%=message%></p>
+        <h1> <%=WStitle%></h1>
+        <p><%=messageSimpleDev%></p>
         <%}
         else {%>
         <div class="col-md-12">
             <%}%>
         </div>
         <%}%>
-        <!-- first div end -->
-
-        <!-- test container for debug -->
-        <%if(secondDiv==true){%>
-        <div class="container">
-            <p>bleh</p> <!-- this is a test container that I have left in because it may have use later -->
-        </div>
-        <%}%><!-- test contatiner for debug -->
-
     </div><!-- /.container end -->
 
 </div>
