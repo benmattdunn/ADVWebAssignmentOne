@@ -1,3 +1,8 @@
+/**
+ * created by ben dunn, oct 3 2016
+ *
+ * basic generated router class for node created through express.
+ */
 var express = require('express');
 var router = express.Router();
 
