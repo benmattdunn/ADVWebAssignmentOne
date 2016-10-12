@@ -1,0 +1,21 @@
+<!--
+Standard bootstrap jumbotron with inline code for quick override,
+
+Modifid by Ben Dunn
+date: Oct 12, 2016
+
+Inputs:
+JumboTitle -> string
+JumboText -> string
+JumboButtonLink -> string <must be a valid address ->
+JumboButtonLinkText -> String (should link to the name of the valid address page)
+
+
+-->
+
+<div class="jumbotron">
+    <h1><%=JumboTitle%></h1>
+    <p><%=JumboText %></p>
+
+    <p><a class="btn btn-primary btn-lg" href="<%=JumboButtonLink%>" role="button"><%=JumboButtonLinkText%></a></p>
+</div>
