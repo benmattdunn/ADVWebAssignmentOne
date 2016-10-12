@@ -39,6 +39,13 @@ router.get('/projectsStart', function(req, res, next) {
     });
 });
 
+router.get('/services', function(req, res, next){
+    res.render('services', {
+        WStitle: 'Ben Matt Dunn'
+    });
+
+});
+
 
 
 module.exports = router;
